@@ -1,0 +1,57 @@
+#CardContainer {
+    margin-left: -45px;
+    flex-shrink: 0;
+    width: 180px;
+    height: 260px;
+    transition-property: opacity, translate;
+    transition-duration: 0.5s, 3s;
+    transition-timing-function: ease, ease-out-elastic;
+}
+
+#CardBg {
+    width: 180px;
+    height: 260px;
+    background-image: url('project://database/Assets/Texture/Card_Shirts_Lite/PNG/Card_shirt_01.png?fileID=2800000&guid=c7bf45f0ef95bed4491c5809fc6bf484&type=3#Card_shirt_01');
+    align-items: center;
+    justify-content: flex-end;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out-back;
+}
+
+#CardContainer:hover #CardBg {
+    translate: 0 -250px;
+    rotate: -5deg;
+    transition-property: all;
+    transition-timing-function: ease-in-out-cubic;
+    transition-duration: 0.2s;
+    transform-origin: left bottom;
+    scale: 1 1;
+    transition-delay: 0s;
+}
+
+.Hide {
+    opacity: 0;
+}
+
+.CardStartAnimation {
+    translate: 0 350px;
+}
+
+#Enemy {
+    width: 150px;
+    height: 150px;
+    align-items: flex-end;
+    justify-content: center;
+    background-image: url('project://database/Assets/Texture/Enemy_Bg.png?fileID=2800000&guid=605d585196a7f3d4b9c67b073f29d9b7&type=3#Enemy_Bg');
+    transition-property: opacity, translate;
+    transition-duration: 1s, 1s;
+    transition-timing-function: ease, ease-out-bounce;
+}
+
+.EnemyStartAnimation {
+    translate: 250px 0;
+}
+
+.ScaleAnimation {
+    scale: 0 0.1;
+}

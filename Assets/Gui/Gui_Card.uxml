@@ -1,0 +1,15 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Gui/CardStyle.uss?fileID=7433441132597879392&amp;guid=aef8f2f30efac5844964adb995b36dbb&amp;type=3#CardStyle" />
+    <ui:VisualElement name="CardWindow" style="flex-shrink: 1; flex-grow: 1; justify-content: flex-start; align-items: flex-end; padding-left: 70px; flex-direction: row; position: absolute; width: 100%; height: 100%; flex-basis: auto; left: 0; top: 0;">
+        <ui:VisualElement name="CardContainer" style="transition-duration: 1s, 1.5s;">
+            <ui:VisualElement name="CardBg" picking-mode="Ignore">
+                <ui:Label text="5 HEALT" display-tooltip-when-elided="true" name="CardInfo" style="width: 100%; height: 100%; font-size: 23px; -unity-text-align: middle-center; -unity-font: url(&apos;project://database/Assets/Font/Syncopate-Bold.ttf?fileID=12800000&amp;guid=5851569a8d167a84897e52b3880aa3a3&amp;type=3#Syncopate-Bold&apos;); -unity-font-definition: none; -unity-font-style: normal; color: rgb(255, 255, 255);" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="EnemyWindow" style="position: absolute; flex-direction: column; right: 0; height: 100%; width: 20%; align-items: flex-end; justify-content: center; flex-grow: 1; padding-right: 30px;">
+        <ui:VisualElement name="Enemy">
+            <ui:VisualElement name="EnemySelect" picking-mode="Ignore" style="width: 195px; height: 219px; background-image: url(&apos;project://database/Assets/Texture/Enemy_Select.png?fileID=2800000&amp;guid=9016b4e0ff12c0843bb83c3e4fb7d14f&amp;type=3#Enemy_Select&apos;); rotate: 90deg; transform-origin: center; position: absolute; translate: 11px 0; transition-property: opacity, scale; transition-duration: 0.2s, 1s; transition-timing-function: ease, ease-out-elastic; transition-delay: 0s, 0.2s;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
